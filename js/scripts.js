@@ -8,8 +8,7 @@
 
 var pigLatin = function(engWord) {
   var splitAt = indexOfFirstVowel(engWord);
-  var transWord = engWord.slice(splitAt) + engWord.slice(0, splitAt);
-  return transWord + 'ay';
+  return engWord.slice(splitAt) + engWord.slice(0, splitAt) + 'ay';
 };
 
 var indexOfFirstVowel = function(word) {
